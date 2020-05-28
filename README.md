@@ -3,7 +3,9 @@ Showcasing Quagga2 in combination with ReactJS
 
 # How to run
 
-```npm run start```
+```yarn```
+
+```yarn start```
 
 then
 
