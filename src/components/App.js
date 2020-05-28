@@ -15,6 +15,7 @@ const App = () => {
             </ul>
             <div ref={scannerRef} style={{position: 'relative', border: '3px solid red'}}>
                 {/* <video style={{ width: window.innerWidth, height: 480, border: '3px solid orange' }}/> */}
+                {/*Initial blank canvas image - See Scanner.defaultConstraint */}
                 <canvas className="drawingBuffer" style={{
                     position: 'absolute',
                     top: '0px',
@@ -22,7 +23,7 @@ const App = () => {
                     // height: '100%',
                     // width: '100%',
                     border: '3px solid green',
-                }} width="640" height="480" />
+                }} width="320" height="240" />
                 {scanning ? <Scanner scannerRef={scannerRef} onDetected={(result) => setResults([...results, result])} /> : null}
             </div>
         </div>
